@@ -1,0 +1,302 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes -->
+    <linearGradient id="devGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="buildGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38ef7d;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="securityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc466b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3f5efb;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="deployGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdbb2d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c1c3;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Sombras -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Padrão de pontos -->
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#ffffff" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  
+  <!-- Título Principal -->
+  <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2d3748">
+    🏗️ E-COMMERCE MICROSERVICES - ARQUITETURA DE CAMADAS
+  </text>
+  
+  <!-- Linha decorativa -->
+  <line x1="300" y1="55" x2="900" y2="55" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- CAMADA 1: DESENVOLVIMENTO -->
+  <g id="development-layer">
+    <!-- Background da camada -->
+    <rect x="50" y="90" width="1100" height="150" rx="15" fill="url(#devGrad)" opacity="0.1" filter="url(#shadow)"/>
+    <rect x="50" y="90" width="1100" height="150" rx="15" fill="url(#dots)" opacity="0.5"/>
+    
+    <!-- Título da camada -->
+    <rect x="70" y="100" width="200" height="35" rx="8" fill="url(#devGrad)" filter="url(#shadow)"/>
+    <text x="170" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      💻 DESENVOLVIMENTO
+    </text>
+    
+    <!-- Microserviços -->
+    <g id="microservices">
+      <!-- Produtos -->
+      <rect x="300" y="110" width="180" height="110" rx="10" fill="#ffffff" stroke="#667eea" stroke-width="2" filter="url(#shadow)"/>
+      <text x="390" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#667eea">🛍️ PRODUTOS</text>
+      <text x="390" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Python + Flask</text>
+      <text x="390" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Port: 9001</text>
+      <rect x="310" y="180" width="160" height="25" rx="5" fill="#667eea" opacity="0.1"/>
+      <text x="390" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#667eea">Catálogo • Preços • Estoque</text>
+      
+      <!-- Categorias -->
+      <rect x="490" y="110" width="180" height="110" rx="10" fill="#ffffff" stroke="#9f7aea" stroke-width="2" filter="url(#shadow)"/>
+      <text x="580" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9f7aea">📂 CATEGORIAS</text>
+      <text x="580" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Python + Flask</text>
+      <text x="580" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Port: 7001</text>
+      <rect x="500" y="180" width="160" height="25" rx="5" fill="#9f7aea" opacity="0.1"/>
+      <text x="580" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#9f7aea">Hierarquia • Atributos</text>
+      
+      <!-- Fornecedores -->
+      <rect x="680" y="110" width="180" height="110" rx="10" fill="#ffffff" stroke="#38a169" stroke-width="2" filter="url(#shadow)"/>
+      <text x="770" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#38a169">🏭 FORNECEDORES</text>
+      <text x="770" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Python + Flask</text>
+      <text x="770" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Port: 8001</text>
+      <rect x="690" y="180" width="160" height="25" rx="5" fill="#38a169" opacity="0.1"/>
+      <text x="770" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#38a169">Contatos • Entregas</text>
+      
+      <!-- Avaliações -->
+      <rect x="870" y="110" width="180" height="110" rx="10" fill="#ffffff" stroke="#ed8936" stroke-width="2" filter="url(#shadow)"/>
+      <text x="960" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ed8936">⭐ AVALIAÇÕES</text>
+      <text x="960" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Python + Flask</text>
+      <text x="960" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Port: 6001</text>
+      <rect x="880" y="180" width="160" height="25" rx="5" fill="#ed8936" opacity="0.1"/>
+      <text x="960" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ed8936">Reviews • Resumos</text>
+    </g>
+    
+    <!-- Setas conectoras entre microserviços -->
+    <path d="M 480 165 Q 510 145 540 165" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 670 165 Q 700 145 730 165" stroke="#9f7aea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 860 165 Q 830 145 800 165" stroke="#ed8936" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- CAMADA 2: BUILD & CONTAINERIZAÇÃO -->
+  <g id="build-layer">
+    <!-- Background da camada -->
+    <rect x="50" y="260" width="1100" height="120" rx="15" fill="url(#buildGrad)" opacity="0.1" filter="url(#shadow)"/>
+    
+    <!-- Título da camada -->
+    <rect x="70" y="270" width="200" height="35" rx="8" fill="url(#buildGrad)" filter="url(#shadow)"/>
+    <text x="170" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      🐳 BUILD & CONTAINER
+    </text>
+    
+    <!-- Docker Build Process -->
+    <g id="docker-build">
+      <!-- Dockerfile -->
+      <rect x="300" y="280" width="150" height="80" rx="8" fill="#ffffff" stroke="#11998e" stroke-width="2" filter="url(#shadow)"/>
+      <text x="375" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#11998e">📄 Dockerfile</text>
+      <text x="375" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">FROM python:3.10-slim</text>
+      <text x="375" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">COPY requirements.txt</text>
+      <text x="375" y="346" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">RUN pip install</text>
+      
+      <!-- Seta -->
+      <path d="M 450 320 L 490 320" stroke="#11998e" stroke-width="3" marker-end="url(#arrowgreen)"/>
+      
+      <!-- Docker Build -->
+      <rect x="500" y="280" width="150" height="80" rx="8" fill="#ffffff" stroke="#38ef7d" stroke-width="2" filter="url(#shadow)"/>
+      <text x="575" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#38ef7d">🔨 Docker Build</text>
+      <text x="575" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">docker build -t</text>
+      <text x="575" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">ecommerce/service</text>
+      <text x="575" y="346" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">:latest</text>
+      
+      <!-- Seta -->
+      <path d="M 650 320 L 690 320" stroke="#38ef7d" stroke-width="3" marker-end="url(#arrowgreen)"/>
+      
+      <!-- Local Images -->
+      <rect x="700" y="280" width="150" height="80" rx="8" fill="#ffffff" stroke="#22c1c3" stroke-width="2" filter="url(#shadow)"/>
+      <text x="775" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#22c1c3">🏠 Local Images</text>
+      <text x="775" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">ecommerce/avaliacoes</text>
+      <text x="775" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">ecommerce/categorias</text>
+      <text x="775" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">ecommerce/fornecedores</text>
+      <text x="775" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">ecommerce/produtos</text>
+      
+      <!-- Seta -->
+      <path d="M 850 320 L 890 320" stroke="#22c1c3" stroke-width="3" marker-end="url(#arrowblue)"/>
+      
+      <!-- Docker Hub -->
+      <rect x="900" y="280" width="150" height="80" rx="8" fill="#ffffff" stroke="#2496ED" stroke-width="2" filter="url(#shadow)"/>
+      <text x="975" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2496ED">🌐 Docker Hub</text>
+      <text x="975" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">tfk8scloud/</text>
+      <text x="975" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">*-ecommerce:latest</text>
+      <text x="975" y="346" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2496ED">📊 157.58 MB cada</text>
+    </g>
+  </g>
+  
+  <!-- CAMADA 3: SEGURANÇA -->
+  <g id="security-layer">
+    <!-- Background da camada -->
+    <rect x="50" y="400" width="1100" height="120" rx="15" fill="url(#securityGrad)" opacity="0.1" filter="url(#shadow)"/>
+    
+    <!-- Título da camada -->
+    <rect x="70" y="410" width="200" height="35" rx="8" fill="url(#securityGrad)" filter="url(#shadow)"/>
+    <text x="170" y="432" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      🛡️ SEGURANÇA
+    </text>
+    
+    <!-- Docker Scout Analysis -->
+    <g id="security-analysis">
+      <!-- Vulnerabilities Scanner -->
+      <rect x="300" y="420" width="200" height="80" rx="8" fill="#ffffff" stroke="#fc466b" stroke-width="2" filter="url(#shadow)"/>
+      <text x="400" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fc466b">🔍 Docker Scout</text>
+      <text x="400" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">Análise de Vulnerabilidades</text>
+      <text x="400" y="472" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#e53e3e">🚨 2 High</text>
+      <text x="400" y="484" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#dd6b20">⚠️ 2 Medium</text>
+      <text x="400" y="496" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#38a169">📋 29 Low</text>
+      
+      <!-- Seta -->
+      <path d="M 500 460 L 540 460" stroke="#fc466b" stroke-width="3" marker-end="url(#arrowred)"/>
+      
+      <!-- Recommendations -->
+      <rect x="550" y="420" width="200" height="80" rx="8" fill="#ffffff" stroke="#3f5efb" stroke-width="2" filter="url(#shadow)"/>
+      <text x="650" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#3f5efb">💡 Recomendações</text>
+      <text x="650" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">Base Image Update</text>
+      <text x="650" y="472" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">python:3.10-slim →</text>
+      <text x="650" y="484" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#38a169">python:3.13-slim</text>
+      <text x="650" y="496" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#38a169">✅ -100% High Vulns</text>
+      
+      <!-- Seta -->
+      <path d="M 750 460 L 790 460" stroke="#3f5efb" stroke-width="3" marker-end="url(#arrowpurple)"/>
+      
+      <!-- Security Score -->
+      <rect x="800" y="420" width="150" height="80" rx="8" fill="#ffffff" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+      <text x="875" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#10b981">📊 Score</text>
+      <text x="875" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">Status Atual:</text>
+      <text x="875" y="472" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f56565">⚠️ ATENÇÃO</text>
+      <text x="875" y="486" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">Meta:</text>
+      <text x="875" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#38a169">✅ BOM</text>
+    </g>
+  </g>
+  
+  <!-- CAMADA 4: DEPLOY & PRODUÇÃO -->
+  <g id="deploy-layer">
+    <!-- Background da camada -->
+    <rect x="50" y="540" width="1100" height="120" rx="15" fill="url(#deployGrad)" opacity="0.1" filter="url(#shadow)"/>
+    
+    <!-- Título da camada -->
+    <rect x="70" y="550" width="200" height="35" rx="8" fill="url(#deployGrad)" filter="url(#shadow)"/>
+    <text x="170" y="572" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      🚀 DEPLOY & PRODUÇÃO
+    </text>
+    
+    <!-- Deployment Options -->
+    <g id="deployment">
+      <!-- Docker Run -->
+      <rect x="300" y="560" width="150" height="80" rx="8" fill="#ffffff" stroke="#fdbb2d" stroke-width="2" filter="url(#shadow)"/>
+      <text x="375" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fdbb2d">🐳 Docker Run</text>
+      <text x="375" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">docker run -p</text>
+      <text x="375" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">9001:9001</text>
+      <text x="375" y="622" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">tfk8scloud/produtos</text>
+      
+      <!-- Docker Compose -->
+      <rect x="470" y="560" width="150" height="80" rx="8" fill="#ffffff" stroke="#22c1c3" stroke-width="2" filter="url(#shadow)"/>
+      <text x="545" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#22c1c3">📦 Compose</text>
+      <text x="545" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">docker-compose</text>
+      <text x="545" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">up -d</text>
+      <text x="545" y="622" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">4 serviços</text>
+      
+      <!-- Kubernetes -->
+      <rect x="640" y="560" width="150" height="80" rx="8" fill="#ffffff" stroke="#326ce5" stroke-width="2" filter="url(#shadow)"/>
+      <text x="715" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#326ce5">⚓ Kubernetes</text>
+      <text x="715" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">kubectl apply</text>
+      <text x="715" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Auto-scaling</text>
+      <text x="715" y="622" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Load balancing</text>
+      
+      <!-- Cloud -->
+      <rect x="810" y="560" width="150" height="80" rx="8" fill="#ffffff" stroke="#ff9500" stroke-width="2" filter="url(#shadow)"/>
+      <text x="885" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ff9500">☁️ Cloud</text>
+      <text x="885" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">AWS/GCP/Azure</text>
+      <text x="885" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">EKS/GKE/AKS</text>
+      <text x="885" y="622" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Managed Services</text>
+    </g>
+  </g>
+  
+  <!-- MONITORAMENTO E MÉTRICAS -->
+  <g id="monitoring">
+    <!-- Background -->
+    <rect x="50" y="680" width="1100" height="80" rx="15" fill="#1a202c" opacity="0.05" filter="url(#shadow)"/>
+    
+    <!-- Health Checks -->
+    <rect x="300" y="700" width="200" height="40" rx="8" fill="#ffffff" stroke="#38a169" stroke-width="2"/>
+    <text x="400" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#38a169">❤️ Health Checks</text>
+    <text x="400" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">/health endpoints</text>
+    
+    <!-- Logs -->
+    <rect x="520" y="700" width="160" height="40" rx="8" fill="#ffffff" stroke="#4299e1" stroke-width="2"/>
+    <text x="600" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4299e1">📊 Logs</text>
+    <text x="600" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">Centralized logging</text>
+    
+    <!-- Metrics -->
+    <rect x="700" y="700" width="160" height="40" rx="8" fill="#ffffff" stroke="#9f7aea" stroke-width="2"/>
+    <text x="780" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9f7aea">📈 Metrics</text>
+    <text x="780" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">Prometheus + Grafana</text>
+  </g>
+  
+  <!-- Setas verticais entre camadas -->
+  <g id="vertical-arrows">
+    <!-- Dev to Build -->
+    <path d="M 600 240 L 600 260" stroke="#667eea" stroke-width="4" marker-end="url(#arrowbig)"/>
+    
+    <!-- Build to Security -->
+    <path d="M 600 380 L 600 400" stroke="#11998e" stroke-width="4" marker-end="url(#arrowbig)"/>
+    
+    <!-- Security to Deploy -->
+    <path d="M 600 520 L 600 540" stroke="#fc466b" stroke-width="4" marker-end="url(#arrowbig)"/>
+    
+    <!-- Deploy to Monitoring -->
+    <path d="M 600 660 L 600 680" stroke="#fdbb2d" stroke-width="4" marker-end="url(#arrowbig)"/>
+  </g>
+  
+  <!-- Marcadores de setas -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+    
+    <marker id="arrowgreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#11998e"/>
+    </marker>
+    
+    <marker id="arrowblue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c1c3"/>
+    </marker>
+    
+    <marker id="arrowred" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#fc466b"/>
+    </marker>
+    
+    <marker id="arrowpurple" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3f5efb"/>
+    </marker>
+    
+    <marker id="arrowbig" markerWidth="12" markerHeight="9" refX="12" refY="4.5" orient="auto">
+      <polygon points="0 0, 12 4.5, 0 9" fill="#4a5568"/>
+    </marker>
+  </defs>
+</svg>
